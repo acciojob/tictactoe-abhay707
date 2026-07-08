@@ -2,7 +2,7 @@
 let player1 = "";
 let player2 = "";
 
-let curPlayer = "X";
+let curPlayer = "x";
 
 let board = ["","","","","","","","",""];
 
@@ -30,7 +30,7 @@ function checkWinner() {
 			board[a] === board[b] &&
 			board[b] === board[c]
 		){
-			message.innerHTML = `<h3>${board[a] === "X" ? player1 : player2}, congratulations you won!</h3>`;
+			message.innerHTML = `<h3>${board[a] === "x" ? player1 : player2} congratulations you won!</h3>`;
 			gameOver = true;
 			return true;
 		}
@@ -62,8 +62,8 @@ cells.forEach(cell =>{
 
 			if(checkWinner()) return;
 			
-			curPlayer = curPlayer === "X" ? "O":"X";
-			message.innerHTML = `<h3>${curPlayer === "X" ? player1:player2}, you're up`;
+			curPlayer = curPlayer === "x" ? "o":"x";
+			message.innerHTML = `<h3>${curPlayer === "x" ? player1:player2}, you're up</h3>`;
 			
 		}
 	});
