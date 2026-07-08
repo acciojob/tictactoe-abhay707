@@ -39,8 +39,8 @@ function checkWinner() {
 }
 
 submit.addEventListener("click", function(){
-	player1 = document.getElementById("player-1").value;
-	player2 = document.getElementById("player-2").value;
+	player1 = document.getElementById("player1").value;
+	player2 = document.getElementById("player2").value;
 	
 	document.getElementById("players").style.display = "none";
 	document.getElementById("board-game").style.display = "block";
